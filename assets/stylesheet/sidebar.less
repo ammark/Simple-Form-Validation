@@ -1,0 +1,71 @@
+/*
+  For EXTRA SMALL SCREEN SIZE
+*/
+
+aside {
+  top: 50px;
+  position: fixed;
+  padding-left: 0;
+  display: none;
+
+  nav {
+	z-index: 1000;
+	position: fixed;
+	width: 20%;
+	height: 100%;
+	overflow-y: auto;
+	background: #0b97c4;
+	.sidebar-nav {
+	  position: absolute;
+	  top: 0;
+	  width: 100%;
+	  margin: 0;
+	  padding: 0;
+	  list-style: none;
+	  li {
+		line-height: 60px;
+		a {
+		  text-transform: capitalize;
+		  text-align: center;
+		  display: block;
+		  text-decoration: none;
+		  color: lightblue;
+		  font-family: 'Source Sans Pro', sans-serif;
+		  font-weight: 300;
+		  i {
+			margin-right: 10px;
+		  }
+		  &:hover {
+			text-decoration: none;
+			color: #fff;
+			background: rgba(255,255,255,0.2);
+		  }
+		}
+	  }
+	}
+  }
+}
+
+
+/*
+  For SMALL SCREEN SIZE
+*/
+@media (min-width: @screen-sm-min) {
+
+}
+
+/*
+  For MEDIUM SCREEN SIZE
+*/
+@media (min-width: @screen-md-min) {
+aside {
+  display: block;
+}
+}
+
+/*
+  For LARGE SCREEN SIZE
+*/
+@media (min-width: @screen-lg-min) {
+
+}
