@@ -1,7 +1,7 @@
 
 
 $().ready(function() {
-
+    //Takes the list of countries from countries.json file and populates them as option tag in the country class
     $.ajax({
         url : 'assets/js/countries.json',
         dataType: 'json',
@@ -10,7 +10,6 @@ $().ready(function() {
         success: function(data){
             for(var i in data) {
                 var name = data[i].name;
-                var code = data[i].code;
                 $(".country").append("<option>" + name + "</option>");
             }
 
@@ -23,11 +22,13 @@ $().ready(function() {
         }
     });
 
+    // This validates Canadian Postal Code
     jQuery.validator.addMethod("postalCodeValidate", function(postal, element) {
         return this.optional(element) ||
             postal.match(/[a-zA-Z][0-9][a-zA-Z](-| |)[0-9][a-zA-Z][0-9]/);
     }, "Please specify a valid postal code. Example: N6K 2Y7");
 
+    // Validates the form fields, and gives out the error messages if validation is false
     $("#registerForm").validate({
         rules: {
             name: {

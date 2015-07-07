@@ -6,19 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Race Roster Mini Project</title>
 
+    <!-- Favicon-->
+    <link rel="icon" type="image/png" href="/assets/images/favicon-192x192.png" sizes="192x192">
+
     <!-- Bootstrap -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
+    <!-- Font Awesome-->
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
+    <!-- Google Fonts-->
     <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
 
+    <!-- Main Stylesheet-->
     <link rel="stylesheet" href="assets/stylesheet/main.css"/>
+
+    <!-- Hey There,
+        So i have used normal CSS properties, JQuery, and JQuery Validate(plugin) to accomplish this project. I have
+        left out the navigation for small screen but if you want it i can totally add it as well. So obviously, this project
+        can be accomplished in many different ways, and i am completely open to doing this project with any other framework.:)
+
+        Please let me know what do you think about this code.
+        ammar.kalim@gmail.com
+
+    -->
 
 </head>
 <body>
 
-
+<!--Top Header Bar-->
 <header>
     <nav class="navbar navbar-color navbar-fixed-top">
         <div class="container">
@@ -27,6 +43,7 @@
     </nav>
 </header>
 
+<!--Sidebar-->
 <aside>
     <nav>
         <ul class="sidebar-nav">
@@ -41,6 +58,7 @@
 
 </aside>
 
+<!--Registration Form-->
 <main>
     <section>
         <div class="registration-form">
@@ -49,25 +67,26 @@
                     <div class="col-md-12">
                         <div class="title">
                             <h1>Event Registration Form</h1>
+                            <p>* This information is mandatory</p>
                         </div>
 
                     </div>
                     <div class="col-md-12">
                         <form class="form-horizontal" id="registerForm">
                             <div class="form-group">
-                                <label for="name" class="col-sm-2 control-label">Name</label>
+                                <label for="name" class="col-sm-2 control-label">Name*</label>
                                 <div class="col-sm-8">
                                     <input type="text" class="form-control" id="name" name="name">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="inputEmail" class="col-sm-2 control-label">Email</label>
+                                <label for="email" class="col-sm-2 control-label">Email*</label>
                                 <div class="col-sm-8">
                                     <input type="email" class="form-control" id="email" name="email" placeholder="">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="inputAddress" class="col-sm-2 control-label">Address</label>
+                                <label for="address" class="col-sm-2 control-label">Address</label>
                                 <div class="col-sm-8">
                                     <input type="text" class="form-control" id="address" name="address" placeholder="">
                                 </div>
@@ -93,7 +112,7 @@
                                 </div>
                             </div>
                             <div class="form-group postalcode">
-                                <label for="postalCode" class="col-sm-2 control-label">Postal Code</label>
+                                <label for="postalCode" class="col-sm-2 control-label">Postal Code*</label>
                                 <div class="col-sm-8">
                                     <input type="text" class="form-control" id="postalCode" name="postalCode" placeholder="">
                                 </div>
@@ -116,6 +135,7 @@
         </div>
     </section>
 
+    <!-- Footer-->
     <footer>
         <div class="container-fluid">
             <div class="row">
@@ -127,18 +147,10 @@
     </footer>
 </main>
 
-
-
-
-
-
-
-
-</div><!-- /.container -->
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
-
+<!--Jquery Validate Plugin with additional Validation-->
 <script src="//cdn.jsdelivr.net/jquery.validation/1.13.1/jquery.validate.min.js"></script>
 <script src="//cdn.jsdelivr.net/jquery.validation/1.13.1/additional-methods.min.js"></script>
 
