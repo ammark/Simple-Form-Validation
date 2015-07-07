@@ -3,7 +3,7 @@
 $().ready(function() {
 
     $.ajax({
-        url : '/assets/js/countries.json',
+        url : 'assets/js/countries.json',
         dataType: 'json',
         type: 'get',
         cache: false,
