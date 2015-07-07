@@ -1,0 +1,22 @@
+{
+  "name": "RaceRoster",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://maplemaids@bitbucket.org/maplemaids/maplemaids.ca.git"
+  },
+  "author": "Ammar Kalim",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.11.2",
+    "grunt-contrib-less": "^1.0.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-postcss": "^0.4.0"
+  }
+}
